@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+
+  <!-- 1️⃣ Prehiding snippet (prevents flicker) -->
+  <script>
+  !function(e,a,n,t){var i=e.head;if(i){
+  if (a) return;
+  var o=e.createElement("style");
+  o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
+</script>
+
+  <!-- 2️⃣ Launch Web SDK environment script -->
+  <script src="https://assets.adobedtm.com/0e9a0418089e/6d1e3b8b75ab/launch-1466e77e399f-development.min.js" async></script>
+
+  <style>
+    .personalization-container { transition: opacity 0.3s }
+  </style>
+</head>
+
+<body>
+  <div class="personalization-container">
+    <h1>Welcome to My Target Demo</h1>
+    <p>This content may be personalized by Adobe Target.</p>
+  </div>
+
+  <a href="product.html">Go to Product Page</a>
+</body>
+</html>

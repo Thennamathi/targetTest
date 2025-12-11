@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Offer Page</title>
+
+  <!-- 1️⃣ Prehiding snippet (prevents flicker) -->
+  <script>
+  !function(e,a,n,t){var i=e.head;if(i){
+  if (a) return;
+  var o=e.createElement("style");
+  o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
+</script>
+
+  <!-- 2️⃣ Launch Web SDK environment script -->
+  <script src="https://assets.adobedtm.com/0e9a0418089e/6d1e3b8b75ab/launch-1466e77e399f-development.min.js" async></script>
+</head>
+<body>
+  <div class="personalization-container">
+    <h1>Special Offer</h1>
+    <p>This is an offer page that Target can modify.</p>
+  </div>
+
+  <a href="index.html">Back to Home</a>
+</body>
